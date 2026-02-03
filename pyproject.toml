@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invest-record"
+version = "0.1.0"
+description = "Local-first investment transaction recorder."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Invest-Record Contributors"}]
+
+[project.scripts]
+invest-record = "invest_record.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
